@@ -1,0 +1,171 @@
+/*mobile*/
+
+*
+{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body
+{
+    background-image:-webkit-linear-gradient(rgb(3, 3, 19), rgb(95, 15, 170), rgb(111, 9, 111));
+}
+
+header
+{
+    text-align: center;
+    display: block;
+    padding:2%;
+    text-shadow: 4px 4px 10px #6c0b0b;
+}
+
+.bigHeading
+{
+    text-align: center;
+    font-size: 80px;
+    color:blueviolet;
+    margin:0;
+}
+
+nav
+{
+    background-color: rgb(34, 4, 64);
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+ul
+{
+list-style: none;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li 
+{
+    border-top: 0.5px, #f6eee4;
+    font-size: 1.5em;
+    font-family: Geneva ,Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a 
+{
+    display:block;
+    color:#f6eee4;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right:2em;
+    text-decoration: none;
+}
+
+main 
+{
+    display: block;
+    background-color: rgb(149, 230, 230);
+    padding: 2%;
+}
+
+#topic h1
+{
+    text-align: center;
+    padding: 5%;
+}
+
+#bigimage
+{
+    display: block;
+}
+
+#begin
+{
+    font-size:26px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+aside 
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #6c0b0b;
+}
+    
+figure 
+{
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #710c1c;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+figure img
+{
+    width: 400px;
+    height: 400px;
+}
+    
+figcaption 
+{
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+}
+
+#column1
+{
+    padding: 2%;
+    text-align: center;
+}
+
+#column2
+{
+    padding: 2%;
+    text-align: center;
+}
+
+@media only screen and (min-width:1000px) {
+    /*Desktop Viewport: Style rules for nav area.*/
+    nav li {
+        font: size 1.5em;
+        display:inline-block;
+    }
+    nav li a{
+        padding: 0.5em;
+    }
+    nav li a:hover{
+        color:#4d0854;
+        background-color: #e02197;
+        opacity: 0.5;
+    }
+
+    /*Desktop viewport: Style rules for main content.*/
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+    aside{
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+    main{
+        overflow: auto;
+        display: block;
+    }
+    #column1, #column2 {
+        width: 45%; /* Adjust width as needed */
+        float: left;
+        padding: 2%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
